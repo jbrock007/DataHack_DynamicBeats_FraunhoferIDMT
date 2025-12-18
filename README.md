@@ -62,13 +62,6 @@ The M2G (Motion to Music Generation) pipeline transforms figure skating videos i
 - CUDA-capable GPU (recommended)
 - FFmpeg (for audio processing)
 
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/m2g-pipeline.git
-cd m2g-pipeline
-```
-
 ### Install Dependencies
 
 ```bash
