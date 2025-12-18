@@ -363,7 +363,7 @@ m2g-pipeline/
 │   └── runs-215-21930.pt    # Trained weights
 ├── graph/
 │   └── skating.py           # Skeleton graph definition
-├── inspiremusic/            # InspireMusic submodule
+├── FunMusic/                # InspireMusic submodule
 │   └── cli/
 │       └── inference.py
 └── pretrained_models/
