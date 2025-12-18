@@ -149,16 +149,16 @@ class InspireMusicWrapper:
                 result_dir=str(self.output_dir)
             )
             self.available = True
-            print(f"✅ InspireMusic loaded: {self.model_name}")
+            print(f" InspireMusic loaded: {self.model_name}")
             return True
             
         except ImportError as e:
-            print(f"⚠️ InspireMusic not available: {e}")
+            print(f" InspireMusic not available: {e}")
             print("   Will create placeholder audio files for demo.")
             self.available = False
             return False
         except Exception as e:
-            print(f"⚠️ Failed to load InspireMusic: {e}")
+            print(f" Failed to load InspireMusic: {e}")
             self.available = False
             return False
     
@@ -237,7 +237,7 @@ class MusicPipelineGenerator:
         with open(moves_path, 'r') as f:
             moves = json.load(f)
         
-        print(f"✅ Loaded {len(moves)} moves from: {moves_path}")
+        print(f" Loaded {len(moves)} moves from: {moves_path}")
         return moves
     
     def get_prompt(self, move: str) -> Dict:
@@ -284,9 +284,9 @@ class MusicPipelineGenerator:
                     "audio_path": audio_path,
                     "prompt": prompt_config["prompt"]
                 })
-                print(f"    ✅ Saved: {audio_path}")
+                print(f"     Saved: {audio_path}")
             else:
-                print(f"    ❌ Failed to generate")
+                print(f"     Failed to generate")
         
         # Save segments log
         log_path = self.segments_dir / "segments_log.json"
@@ -316,7 +316,7 @@ class MusicPipelineGenerator:
             audio_path = seg["audio_path"]
             
             if not os.path.exists(audio_path):
-                print(f"⚠️ Missing: {audio_path}")
+                print(f" Missing: {audio_path}")
                 continue
             
             print(f"   Adding: {seg['move']} ({seg['duration']:.1f}s)")
@@ -344,7 +344,7 @@ class MusicPipelineGenerator:
         
         final_duration = len(combined) / 1000
         
-        print(f"\n✅ Final track exported:")
+        print(f"\n Final track exported:")
         print(f"   WAV: {wav_path}")
         print(f"   MP3: {mp3_path}")
         print(f"   Duration: {final_duration:.2f}s")
