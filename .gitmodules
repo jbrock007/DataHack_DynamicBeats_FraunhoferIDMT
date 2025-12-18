@@ -1,0 +1,3 @@
+[submodule "FunMusic"]
+	path = FunMusic
+	url = https://github.com/FunAudioLLM/FunMusic.git

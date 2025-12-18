@@ -1,0 +1,32 @@
+[
+    {
+        "move": "3Axel",
+        "start_time": 16.67,
+        "end_time": 33.33,
+        "mean_time": 25.0
+    },
+    {
+        "move": "FlyCamelSpin4",
+        "start_time": 33.33,
+        "end_time": 50.0,
+        "mean_time": 41.5
+    },
+    {
+        "move": "2Axel",
+        "start_time": 66.67,
+        "end_time": 83.33,
+        "mean_time": 75.0
+    },
+    {
+        "move": "FlyCamelSpin4",
+        "start_time": 83.33,
+        "end_time": 100.0,
+        "mean_time": 91.5
+    },
+    {
+        "move": "3Axel",
+        "start_time": 100.0,
+        "end_time": 116.67,
+        "mean_time": 108.0
+    }
+]
