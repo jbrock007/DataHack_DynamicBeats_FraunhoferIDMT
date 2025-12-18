@@ -293,7 +293,7 @@ class MusicPipelineGenerator:
         with open(log_path, 'w') as f:
             json.dump(segments, f, indent=4)
         
-        print(f"\n✅ Generated {len(segments)} segments")
+        print(f"\n Generated {len(segments)} segments")
         return segments
     
     def concatenate(self, 
@@ -408,7 +408,7 @@ def interactive_mode():
     moves_path = input("\nEnter moves JSON file path: ").strip()
     
     if not os.path.exists(moves_path):
-        print(f"❌ File not found: {moves_path}")
+        print(f" File not found: {moves_path}")
         sys.exit(1)
     
     output_dir = input("Output directory (default: ./m2g_output): ").strip()
@@ -454,7 +454,7 @@ def main():
         results = generator.run(moves_path, output_name)
         return 0
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\n Error: {e}")
         import traceback
         traceback.print_exc()
         return 1
